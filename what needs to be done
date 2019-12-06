@@ -1,0 +1,15 @@
+--Encrypt--
+The file then should be opened and encrypted using the an encryption algorithm.
+The encrypted version of the file should then be written back to disk, replacing the contents of the file w/ the “encrypted” contents
+When complete the menu should be presented
+When viewed, the contents of the file should not be recognizable
+
+
+
+--Decrypt--
+
+The file should opened and decrypted using the “reverse” of your encryption algorithm
+The un-encrypted version of the file should be written back to disk, replacing the contents of the file with the un-encrypted contents
+When complete the menu should be presented
+When viewed, the file should look like the original file
+

@@ -78,6 +78,9 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/klewis/Documents/GitHub/INFO450Encrypt/FileHandling.cpp">
+			<Option target="INFO450Encrypt"/>
+		</Unit>
 		<Unit filename="/Users/klewis/Documents/GitHub/INFO450Encrypt/FileHandling.h">
 			<Option target="INFO450Encrypt"/>
 		</Unit>

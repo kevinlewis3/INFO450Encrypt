@@ -123,6 +123,33 @@ INFO450Encrypt/fast:
 	$(MAKE) -f CMakeFiles/INFO450Encrypt.dir/build.make CMakeFiles/INFO450Encrypt.dir/build
 .PHONY : INFO450Encrypt/fast
 
+FileHandling.o: FileHandling.cpp.o
+
+.PHONY : FileHandling.o
+
+# target to build an object file
+FileHandling.cpp.o:
+	$(MAKE) -f CMakeFiles/INFO450Encrypt.dir/build.make CMakeFiles/INFO450Encrypt.dir/FileHandling.cpp.o
+.PHONY : FileHandling.cpp.o
+
+FileHandling.i: FileHandling.cpp.i
+
+.PHONY : FileHandling.i
+
+# target to preprocess a source file
+FileHandling.cpp.i:
+	$(MAKE) -f CMakeFiles/INFO450Encrypt.dir/build.make CMakeFiles/INFO450Encrypt.dir/FileHandling.cpp.i
+.PHONY : FileHandling.cpp.i
+
+FileHandling.s: FileHandling.cpp.s
+
+.PHONY : FileHandling.s
+
+# target to generate assembly for a file
+FileHandling.cpp.s:
+	$(MAKE) -f CMakeFiles/INFO450Encrypt.dir/build.make CMakeFiles/INFO450Encrypt.dir/FileHandling.cpp.s
+.PHONY : FileHandling.cpp.s
+
 main.o: main.cpp.o
 
 .PHONY : main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... INFO450Encrypt"
+	@echo "... FileHandling.o"
+	@echo "... FileHandling.i"
+	@echo "... FileHandling.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

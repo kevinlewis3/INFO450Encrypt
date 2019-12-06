@@ -1,6 +1,7 @@
 #include <iostream>
 #include <string>
 #include "FileHandling.h"
+#include <fstream>
 using namespace std;
 
 int main()
@@ -8,6 +9,7 @@ int main()
     int selection = 1;
     FileHandling efile;
     string fileLocation;
+    string txt; //might not need dthis
 
     do
         {

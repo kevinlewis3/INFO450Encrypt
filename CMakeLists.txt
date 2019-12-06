@@ -3,4 +3,4 @@ project(INFO450Encrypt)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(INFO450Encrypt main.cpp FileHandling.h)
+add_executable(INFO450Encrypt main.cpp FileHandling.h FileHandling.cpp)
