@@ -7,16 +7,16 @@ using namespace std;
 int main()
 {
     int selection = 1;
+    int secureKey = 0;
     FileHandling efile;
     string fileLocation;
-    string txt; //might not need dthis
 
     do
         {
-        cout << "|| 1. Decrypt a file " << endl;
-        cout << "|| 2. Encrypt a file " << endl;
-        cout << "|| 0. Exit " << endl;
-        cout << "|| Enter a number to choose from the above options: ";
+        cout << "|| 1. Decrypt a file ||" << endl;
+        cout << "|| 2. Encrypt a file ||" << endl;
+        cout << "|| 0. Exit ||" << endl;
+        cout << "|| Please make your selection from the options above: ||";
         cin >> selection;
         cin.ignore();
 
@@ -24,12 +24,28 @@ int main()
         {
             break;
         } else if (selection == 1) {
+
+            cout << "Enter a key to use. This should be a value between 0 and 25: ";
+            cin >> secureKey;
+            efile.setsecureKey(secureKey);
+            cin.ignore();
+
+            cout << "\nExample File Path: /Users/klewis/: ";
             cout << "Enter the the full path name of an encrypted file:  ";
             getline(cin, fileLocation);
-            efile.readFromFile(fileLocation);
-            cout << "\nSuccessfully loaded file. Use option 1 to decrypt the file" <<endl;
+            efile.encryptFile(fileLocation);
+            cout << "\nSuccessfully loaded file. Your file has now been encrypted" <<endl;
         } else if (selection == 2) {
+            cout << "Enter a key to use. This should be a value between 0 and 25: ";
+            cin >> secureKey;
+            efile.setsecureKey(secureKey);
+            cin.ignore();
+
+            cout << "\nExample File Path: /Users/klewis/: ";
             cout << "Enter the full file path name: ";
+            getline(cin, fileLocation);
+            efile.decryptFile(fileLocation);
+            cout << "\nYour file has been decrypted.\n";
         } else {
             cout << "Invalid response. Try again, sucker";
         }

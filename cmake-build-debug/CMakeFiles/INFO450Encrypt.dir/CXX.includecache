@@ -6,19 +6,19 @@
 
 #IncludeRegexTransform: 
 
-/Users/klewis/Documents/GitHub/INFO450Encrypt/FileHandling.h
+/Users/klewis/Documents/GitHub/INFO450Encrypt/FileHandling.cpp
 iostream
 -
 string
 -
-
-/Users/klewis/Documents/GitHub/INFO450Encrypt/main.cpp
-iostream
--
-string
+fstream
 -
 FileHandling.h
 /Users/klewis/Documents/GitHub/INFO450Encrypt/FileHandling.h
-fstream
+
+/Users/klewis/Documents/GitHub/INFO450Encrypt/FileHandling.h
+iostream
+-
+string
 -
 
